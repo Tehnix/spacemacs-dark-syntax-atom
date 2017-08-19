@@ -1,5 +1,5 @@
 {
-  "name": "spacemacs-dark-syntax",
+  "name": "spacemacsdark-syntax",
   "theme": "syntax",
   "version": "0.6.0",
   "description": "The Spacemacs Dark theme. This is a fork of bcoop713/spacemacs-dark-syntax-atom, updated to fix the changes in the DOM (no :host and ::shadow, and using .syntax--).",
@@ -10,7 +10,7 @@
     "spacemacs",
     "dark"
   ],
-  "repository": "https://github.com/bcoop713/spacemacs-dark-syntax-atom",
+  "repository": "https://github.com/bcoop713/spacemacsdark-syntax-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
