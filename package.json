@@ -10,7 +10,7 @@
     "spacemacs",
     "dark"
   ],
-  "repository": "https://github.com/bcoop713/spacemacsdark-syntax-atom",
+  "repository": "https://github.com/Tehnix/spacemacsdark-syntax-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
