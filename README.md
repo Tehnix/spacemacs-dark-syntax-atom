@@ -1,8 +1,5 @@
-# spacemacs-dark-syntax theme
+# spacemacs-dark-syntax theme for Atom
 
-This is an atom adaption of one of my all time favorite themes, Spacemacs Dark for Emacs.
+The Spacemacs Dark theme. This is a fork of [bcoop713/spacemacs-dark-syntax-atom](https://github.com/bcoop713/spacemacs-dark-syntax-atom), updated to fix the changes in the DOM (no :host and ::shadow, and using .syntax--).
 
-It's unusual comments and bold colors make for a very distinct and fun theme.
-I prefer to use the Atom Material theme, but any dark UI theme should work well.
-
-![A screenshot of your theme](http://i.imgur.com/aZW1KuP.jpg)
+![Screenshot of Spacemacs Dark Syntax](http://i.imgur.com/aZW1KuP.jpg)

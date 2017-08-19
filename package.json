@@ -1,8 +1,8 @@
 {
   "name": "spacemacs-dark-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
-  "description": "This is an atom adaption of one of my all time favorite themes, Spacemacs Dark for Emacs.",
+  "version": "0.5.0",
+  "description": "The Spacemacs Dark theme. This is a fork of bcoop713/spacemacs-dark-syntax-atom, updated to fix the changes in the DOM (no :host and ::shadow, and using .syntax--).",
   "keywords": [
     "syntax",
     "theme",
