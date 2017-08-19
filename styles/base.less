@@ -4,33 +4,33 @@ atom-text-editor {
   background-color: @bg1;
   color: @base;
 
-  .syntax--wrap-guide {
+  .wrap-guide {
     background-color: @bg2 !important;
   }
 
-  .syntax--indent-guide {
+  .indent-guide {
     color: @base;
   }
 
-  .syntax--invisible-character {
+  .invisible-character {
     color: @base;
   }
 
-  .syntax--line.syntax--cursor-line {
+  .line.cursor-line {
     background-color: @bg2;
   }
 
-  .syntax--gutter {
+  .gutter {
     background-color: @bg1;
     color: @lnum;
 
-    .syntax--line-number {
-      &.syntax--cursor-line {
+    .line-number {
+      &.cursor-line {
         background-color: @bg2;
         color: @lnum;
       }
 
-      &.syntax--cursor-line-no-selection {
+      &.cursor-line-no-selection {
         background-color: @bg1;
         color: @lnum;
         font-weight: bold;
@@ -38,37 +38,37 @@ atom-text-editor {
     }
   }
 
-  .syntax--gutter .syntax--line-number.syntax--folded,
-  .syntax--gutter .syntax--line-number:after,
-  .syntax--fold-marker:after {
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
     color: @base;
   }
 
-  .syntax--invisible {
+  .invisible {
     color: @base;
   }
 
-  .syntax--cursor {
+  .cursor {
     color: @cursor !important;
   }
 
-  .syntax--selection .syntax--region {
+  .selection .region {
     background-color: @highlight;
   }
 }
 
-atom-text-editor .syntax--search-results .syntax--marker .syntax--region {
+atom-text-editor .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @base;
 }
 
-atom-text-editor .syntax--search-results .syntax--marker.syntax--current-result .syntax--region {
+atom-text-editor .search-results .marker.current-result .region {
   border: 1px solid @base;
 }
 
 .syntax--comment {
   color: @comment;
-  background: @comment-bg;
+  //background: @comment-bg;
 }
 
 .syntax--keyword {
@@ -80,6 +80,9 @@ atom-text-editor .syntax--search-results .syntax--marker.syntax--current-result 
 
   &.syntax--operator {
     color: @base;
+    .syntax--haskell {
+      color: @infixOperator;
+    }
   }
 
   &.syntax--other.syntax--special-method {
