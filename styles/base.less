@@ -138,6 +138,11 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--string {
   color: @str;
 
+  &.syntax--punctuation {
+    &.syntax--begin, &.syntax--end {
+      color: @str;
+    }
+  }
 
   &.syntax--regexp {
     color: @str;
