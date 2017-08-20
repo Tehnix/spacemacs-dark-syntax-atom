@@ -1,0 +1,29 @@
+@import "colors";
+
+// Haskell specific syntax.
+.syntax--haskell {
+  .syntax--entity.syntax--name.syntax--type {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .syntax--entity.syntax--name.syntax--tag {
+    text-decoration: none;
+  }
+
+  .syntax--entity.syntax--name.syntax--function {
+    font-weight: bold;
+  }
+
+  .syntax--support.syntax--other.syntax--module {
+    color: @type;
+  }
+
+  // Currently hits first-child on wrapped lines also.
+  &.syntax--source > :first-child {
+    &.syntax--identifier.syntax--haskell {
+      // font-weight: bold;
+      // color: @type;
+    }
+  }
+}

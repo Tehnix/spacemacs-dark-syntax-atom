@@ -1,0 +1,172 @@
+@import "colors";
+
+.syntax--comment {
+  color: @comment;
+}
+
+.syntax--keyword {
+  color: @keyword;
+
+  &.syntax--control {
+    color: @keyword;
+  }
+
+  &.syntax--operator {
+    color: @base;
+
+    &.syntax--haskell {
+      color: @infixOperator;
+    }
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @base;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @base;
+  }
+}
+
+.syntax--storage {
+  color: @keyword;
+}
+
+.syntax--constant {
+  color: @const;
+
+  &.syntax--character.syntax--escape {
+    color: @cursor;
+  }
+
+  &.syntax--numeric {
+    color: @const;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @const;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @const;
+  }
+}
+
+.syntax--variable {
+  color: @var;
+
+  &.syntax--interpolation {
+    color: @var;
+  }
+
+  &.syntax--parameter.syntax--function {
+    color: @base;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @cursor;
+  color: @base;
+}
+
+.syntax--string {
+  color: @str;
+
+  &.syntax--punctuation {
+    &.syntax--begin,
+    &.syntax--end {
+      color: @str;
+    }
+  }
+
+  &.syntax--regexp {
+    color: @str;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @str;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @str;
+  }
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
+      color: @comment;
+    }
+
+    &.syntax--array,
+    &.syntax--parameters,
+    &.syntax--string,
+    &.syntax--variable {
+      color: @base;
+    }
+
+    &.syntax--string {
+      &.syntax--begin,
+      &.syntax--end {
+        color: @str;
+      }
+    }
+
+    &.syntax--bold {
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      font-style: italic;
+    }
+  }
+}
+
+.syntax--support {
+  &.syntax--function {
+    color: @func;
+
+    &.syntax--any-method {
+      color: @func;
+    }
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    color: @func;
+  }
+
+  &.syntax--name.syntax--type {
+    color: @type;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    color: @func;
+  }
+
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
+    color: @func;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @func;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @type;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @type;
+
+    &.syntax--id {
+      color: @func;
+    }
+  }
+}
+
+atom-text-editor[mini] .syntax--scroll-view {
+  padding-left: 1px;
+}
