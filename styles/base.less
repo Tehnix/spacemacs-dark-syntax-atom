@@ -336,3 +336,31 @@ atom-text-editor[mini] .syntax--scroll-view {
 .syntax--html .syntax--string {
   color: @blue;
 }
+
+
+// Haskell specific syntax.
+.syntax--haskell {
+  .syntax--entity.syntax--name.syntax--type {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .syntax--entity.syntax--name.syntax--tag {
+    text-decoration: none;
+  }
+
+  .syntax--entity.syntax--name.syntax--function {
+    font-weight: bold;
+  }
+
+  .syntax--support.syntax--other.syntax--module {
+    color: #ce537a; // Same as types
+  }
+
+  // Currently hits first-child on wrapped lines also.
+  &.syntax--source > :first-child {
+    &.syntax--identifier.syntax--haskell {
+      // font-weight: bold;
+      // color: orange;
+    }
+  }
+}
