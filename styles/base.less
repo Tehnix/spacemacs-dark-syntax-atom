@@ -38,9 +38,7 @@ atom-text-editor {
     }
   }
 
-  .fold-marker:after,
-  .gutter .line-number.folded,
-  .gutter .line-number:after {
+  .fold-marker:after, .gutter .line-number.folded, .gutter .line-number:after {
     color: @base;
   }
 
@@ -55,13 +53,14 @@ atom-text-editor {
   .selection .region {
     background-color: @highlight;
   }
-}
 
-atom-text-editor .search-results .syntax--marker .region {
-  background-color: transparent;
-  border: 1px solid @base;
-}
-
-atom-text-editor .search-results .syntax--marker.current-result .region {
-  border: 1px solid @base;
+  .search-results {
+    .syntax--marker .region {
+      background-color: transparent;
+      border: 1px solid @base;
+    }
+    .syntax--marker.current-result .region {
+      border: 1px solid @base;
+    }
+  }
 }
