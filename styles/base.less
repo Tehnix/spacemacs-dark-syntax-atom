@@ -1,19 +1,21 @@
 @import "colors";
 
+@washed-out-color: rgba(223, 145, 249, 0.11);
+
 atom-text-editor {
   background-color: @bg1;
   color: @base;
 
   .wrap-guide {
-    background-color: @bg2 !important;
+    background-color: rgba(216, 216, 216, 0.15) !important;
   }
 
   .indent-guide {
-    color: @base;
+    color: @washed-out-color;
   }
 
   .invisible-character {
-    color: @base;
+    color: @washed-out-color;
   }
 
   .line.cursor-line {
@@ -22,17 +24,20 @@ atom-text-editor {
 
   .gutter {
     background-color: @bg1;
-    color: @lnum;
+    // color: @lnum;
+    color: #814c85;
 
     .line-number {
       &.cursor-line {
         background-color: @bg2;
-        color: @lnum;
+        // color: @lnum;
+        color: #eb54f7;
       }
 
       &.cursor-line-no-selection {
         background-color: @bg1;
-        color: @lnum;
+        // color: @lnum;
+        color: #eb54f7;
         font-weight: bold;
       }
     }
@@ -43,7 +48,7 @@ atom-text-editor {
   }
 
   .invisible {
-    color: @base;
+    color: @washed-out-color;
   }
 
   .cursor {

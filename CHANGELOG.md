@@ -1,3 +1,8 @@
+# 0.16.0
+
+- Make Markdown syntax highlighting more prominent
+- Make indent guidelines less intrusive
+
 # 0.15.0
 
 - Handle selectors with [data-font='hasklig-medium']

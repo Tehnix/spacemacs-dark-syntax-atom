@@ -1,6 +1,6 @@
 # Spacemacs Dark Syntax theme for Atom
 
-The Spacemacs Dark theme. This is a fork of [bcoop713/spacemacs-dark-syntax-atom](https://github.com/bcoop713/spacemacs-dark-syntax-atom), updated to fix the changes in the DOM and cleaned up.
+The Spacemadcs Dark theme. This is a fork of [bcoop713/spacemacs-dark-syntax-atom](https://github.com/bcoop713/spacemacs-dark-syntax-atom), updated to fix the changes in the DOM and cleaned up.
 
 Additionally work has been done to make it better for Haskell.
 
